@@ -1,28 +1,12 @@
 <?php
-
-    class Movie
-    {
-        public $title;
-        public $year;
-        public $director;
-        public $genre;
-        public $original_lang;
-
-        function __construct(string $title, int $year, string $director, string $genre, string $original_lang)
-        {
-            $this->title =$title;
-            $this->year =$year;
-            $this->director =$director;
-            $this->genre =$genre;
-            $this->original_lang =$original_lang;
-        }
-    }
+require __DIR__ . '/classes/movies.php';
+  
 
 $movies =[
     new Movie('Avatar', 2011, 'Christopher Nolan', 'Fantasy', 'en'),
     new Movie('Saw', 2007, 'Bob Dylan', 'Horror', 'en'),
 ];
-var_dump($movies)
+//var_dump($movies)
 
 ?>
 
